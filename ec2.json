@@ -1,0 +1,14 @@
+{
+    "version": "2012-10-17",
+     "statement":[
+        {
+            "effect":"ALLOW",
+            "action": [
+                "ec2:describe*",
+                "ec2:startinstance",
+                "ec2:stopinstance"
+            ],
+            "resource":"*"
+        }
+     ]
+}

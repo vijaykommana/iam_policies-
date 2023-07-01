@@ -1,0 +1,20 @@
+{
+    "version": "2012-10-17",
+    "statement":[
+        {
+            "Effect":"ALLLOW",
+            "action":[
+                "ec2:describe*",
+                "ec2:startinstance",
+                "ec2:stopinstance"
+            ],
+        "resource": "*"
+        },
+        {"Effect": "Deny",
+           "action" : [
+            "ec2:terminateinstances"
+           ],
+           "resource":"*"
+        }
+    ]
+}
